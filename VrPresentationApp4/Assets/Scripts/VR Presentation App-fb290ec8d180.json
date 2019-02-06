@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "vr-presentation-app",
+  "private_key_id": "fb290ec8d1803c1b8288fe2195bc03fe6920efac",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCcJItX86qGcK7F\nAaSZoM+1PTU+3ciCPTWLlDN1JxxOqzUKEyWhscE5GzlnpXWQbwx2UV8A38NTTQPe\nN3ykHnLN4KBqqJzNTTHqZfoZQoiDeZiHvsLi0VCPdk4nSeaoGor2Zr9wjIZCoa6U\nnL2hIJhhw9rY5PC1ULMfC8RZr8LrRh2JJ9G5LQUmjhiIxsWVx9WUGCBkSJA2/AK2\nvrdk+1QiLtT+K7Nr74VGzGVezSFqOvJaNzYHpaB0MwO4x4APHZMMZL2UHkfjDkyX\njrUhkMlXYu9GJUPciWrozs1Sy/0KQtXWLakR/h5Pyn/XM1gxhmM8iMv7DDFr3b4E\nT1cf+VejAgMBAAECgf8NaxaOeGIvK3/Zbkq26RrweFIbFPQmPRxc4l+JsdK87/me\n5AZX3u67+Zr1TULNJr3rbRK9AH3IqtWqQxpzACrdhnBCujq/aeLgQeM8SHty0QBK\nqhoVY+eIbKJKvg8UYzON+UZ6ZZkkIMDgBJhHQIXX4Pztpr8I1eaOxHQbQP9/OGT0\nXFVrsg0iI5ydg4zPZ7rwzrAdvqCbuAzlde80r+6DEHnuaMszGcqgAFPRqf5REAQi\nrHN/znz1dbhd8HqvFGpCvMG7CDXqdbt5yGtWHKgyYCUSO8P4Epn/zIRbauaRQNAr\nD+7XOPU9oqXiQ5LIoVQrrZjQ+3Tcp2PlG48RHeECgYEAyJ9q1t+jweyXrfzxt82w\nrZ6d3BAyexx42YSwIPw/zS3Z4/RqIW8EBCgTwZDNTOD1E+LTY66ZQJzZfCcY6A8z\n6fuwYgfbzZbqSjpV8iPG9xm2Wq1nl74gZNcRRHHewzw2xsc7nlEFq+L/cIniyXhk\nCSTgUx4bY8dyzBWWAJqNfosCgYEAxz4LFKqmrfHtvtvTIUicgQZ+lqwks+fv3De/\nGko57V0a5XPQZ/4lyiEh67bTd6uH0Iai0FYMhXrdQ8QwYjOXDdS/yndxtRXLAx0L\ncCYm/TGomwiz75SoM8dDKfj13OOHoW18gD8pVcL65ln5yFmsrd1lW9Yzcl1QvQA0\nDqwbBkkCgYEAmSPnQAISVHMvDSaptG4UUVNkmJjcj9EaBqAcefFTGmHHkxP892xw\nmmOlQPoxXF/Tc8yPI+YhIYsZEIYfovQH4rG23/2zsOlkCikhdeYNeI1t/yWij9gX\njiIFEkQBkPIjtfRa8+xQ8fYimlsGfFejtL8rZQb0TWPvow1PJULUgyUCgYA2PtMf\nflLBGxQimZEDB9TsYAtJFHctsCEi8N6L1teso2O2QvDjz1MUlC67EVzDwSTKBk3/\nsN3Z3ZiuYZTWt7sRnfHVuu1vYw6Ru2+oygpldwazpwvuV6fv6PmFTO4LhLshnUB/\nXjLv0ZUj8C1MefXEpHl7Jnd9VKCtxIdn0z3MWQKBgQC1dzpjYHRSX7MM6Yqq+kJ1\nyJwLsul223TAOHhp3okBnLF/+T0dz717/63wtLP2PmaZJIGaULO7kwqp1RCb30o4\nks6i3Ak31rkxZ0eIzGofH8U6EK++GdYxVjQ4IywpDoO7FrP3kHcjj5cbL3m8bc7t\nY6nVU9RhMdgVnX7bHJy7RA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "convert-speech-to-text@vr-presentation-app.iam.gserviceaccount.com",
+  "client_id": "102383134037820318531",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/convert-speech-to-text%40vr-presentation-app.iam.gserviceaccount.com"
+}
