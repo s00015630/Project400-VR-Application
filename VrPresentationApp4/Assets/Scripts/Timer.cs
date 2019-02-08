@@ -11,8 +11,8 @@ public class Timer : MonoBehaviour
 {
     //private int timeLeft = GetDurationTime.durationSelected;
     public static bool speechFinished = false;
-    private int timeLeft = 10;// duration for testing
-    private int speechTime = GetDurationTime.durationSelected;
+    private int timeLeft = GetSliderDuration.durationSelected;// duration for testing
+    private int speechTime = GetSliderDuration.durationSelected;
     public Text countdownText;
     AudioSource audioData;
     public bool playAudio = true;

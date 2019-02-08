@@ -10,7 +10,7 @@ using System.Net.Security;
 public class SaveMySpeech : MonoBehaviour
 {
     public Button stopSpeech;
-    private int speechTime = GetDurationTime.durationSelected;
+    private int speechTime = GetSliderDuration.durationSelected;
     
     public AudioSource audioData;
     public bool playAudio = true;
