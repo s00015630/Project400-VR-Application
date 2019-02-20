@@ -9,7 +9,7 @@ using System.Net.Security;
 
 public class Timer : MonoBehaviour
 {
-    //private int timeLeft = GetDurationTime.durationSelected;
+    
     public static bool speechFinished = false;
     private int timeLeft = GetSliderDuration.durationSelected;// duration for testing
     private int speechTime = GetSliderDuration.durationSelected;
@@ -87,7 +87,7 @@ public class Timer : MonoBehaviour
 
                 //apiKey = "0dd1709ed323b7ac7aba870501496ef12f9cb0fc";
 
-                //string apiURL = "http://www.google.com/speech-api/v2/recognize?output=json&lang=IE-&key=" + apiKey;
+                //string apiURL = "http://www.google.com/speech-api/v2/recognize?output=json&lang=IE-&key=" + apiKey;////////   Not valid anymore
                 //string Response;
 
                 //Debug.Log("Uploading " + filePath);

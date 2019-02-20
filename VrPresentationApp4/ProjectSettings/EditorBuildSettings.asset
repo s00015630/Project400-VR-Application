@@ -5,43 +5,43 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/MainNav.unity
     guid: 02343c82006fb0440b3371bd72657097
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/RoomsWithNoPeopleMenu.unity
     guid: f964f69e36094fa45aa20a7115541536
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/RoomsWithSmallCrowdMenu.unity
     guid: 273f69f9b359e804fada38a78f1125ad
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/RoomsWithLargeCrowdMenu.unity
     guid: 0d2053cda06c5514bbade5129c150526
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/ClassRoom/ClassRoomNoPeople.unity
     guid: 78f86536f7d10354c823afa5be8d9b8f
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/ClassRoom/ClassRoomSmallCrowd.unity
     guid: 844b982da9eb1b549a756be9421756e4
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/LibraryRoom/SmallRoom.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/LibraryRoom/SmallRoomNoPeople.unity
     guid: 3af025ddf22b4064bad33754c12a5386
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/LibraryRoom/SmallRoomLargeCrowd.unity
     guid: 5706614fcd2c07d4282b6505c7117472
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/LargeLectureHall/FancyLectureHallNoPeople.unity
     guid: 82025188e223f224abc91d51a85b9994
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/LargeLectureHall/FancyLectureHallLargeCrowd.unity
     guid: a47e9c6f9d4b2f14ab6c095d085cad78
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/LargeLectureHall/FancyLectureHallSmallCrowd.unity
     guid: b025c996f05323e468a4cdccd49c54e7
   - enabled: 1
-    path: Assets/Scenes/TestBrowser.unity
-    guid: 5ba56e62efbc54240a0a975721f2a1ca
+    path: Assets/Scenes/ClassRoom/ClassRoomLargeCrowd.unity
+    guid: d61e134c93b15a943986dcbe40a41677
   m_configObjects: {}
