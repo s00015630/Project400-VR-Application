@@ -1,8 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using System.IO;
-using UnityEngine.UI;
 using TMPro;
 
 public sealed class GetExternalTextFile : MonoBehaviour
@@ -10,8 +7,7 @@ public sealed class GetExternalTextFile : MonoBehaviour
     public TextMeshProUGUI m_Text;
     
     public void ReadFromFile()
-    {
-        
+    {        
         m_Text = GetComponent<TextMeshProUGUI>();
         m_Text.text = "Attempting to load text file";
         string fileName = "VrNotes.txt";
@@ -31,7 +27,6 @@ public sealed class GetExternalTextFile : MonoBehaviour
             Debug.Log(reader.ReadToEnd());
             reader.Close();
         }
-
     }
     public void ButtonClicked()
     {

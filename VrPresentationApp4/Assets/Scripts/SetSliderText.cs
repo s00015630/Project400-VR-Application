@@ -16,5 +16,6 @@ public class SetSliderText : MonoBehaviour
     public void textUpdate(float value)
     {
         sliderText.text = Mathf.RoundToInt(value) + " Minutes";
+        Debug.Log(value);
     }
 }
