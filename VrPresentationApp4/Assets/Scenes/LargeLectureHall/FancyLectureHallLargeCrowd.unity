@@ -4639,6 +4639,7 @@ GameObject:
   - component: {fileID: 585118947}
   - component: {fileID: 585118946}
   - component: {fileID: 585118945}
+  - component: {fileID: 585118950}
   m_Layer: 5
   m_Name: QuestionBtn
   m_TagString: Untagged
@@ -4768,6 +4769,19 @@ RectTransform:
   m_AnchoredPosition: {x: 10.36496, y: -232.07816}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &585118950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 585118944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5e3fbe758d670d4f9898ba4f815708f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 585118946}
 --- !u!1001 &627862657
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5323,7 +5337,7 @@ RectTransform:
   m_GameObject: {fileID: 725245020}
   m_LocalRotation: {x: -0.00000068545336, y: -0.7071077, z: -0.00000057206483, w: 0.70710593}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.0067594848, y: 0.030344455, z: 45.923862}
+  m_LocalScale: {x: 0.0060159415, y: 0.027006565, z: 40.87224}
   m_Children: []
   m_Father: {fileID: 18682631}
   m_RootOrder: 0
@@ -9552,7 +9566,7 @@ GameObject:
   - component: {fileID: 1318343472}
   - component: {fileID: 1318343471}
   m_Layer: 5
-  m_Name: Button
+  m_Name: ButtonQuit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

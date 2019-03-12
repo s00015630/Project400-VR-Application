@@ -988,6 +988,7 @@ GameObject:
   - component: {fileID: 378770356}
   - component: {fileID: 378770355}
   - component: {fileID: 378770354}
+  - component: {fileID: 378770359}
   m_Layer: 5
   m_Name: QuestionBtn
   m_TagString: Untagged
@@ -1117,6 +1118,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0.16772461, y: -232.00479}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &378770359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378770353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5e3fbe758d670d4f9898ba4f815708f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 378770355}
 --- !u!1001 &459672246
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4407,7 +4421,7 @@ RectTransform:
   m_GameObject: {fileID: 1589271702}
   m_LocalRotation: {x: 0.27059805, y: -0.6532815, z: 0.27059805, w: 0.6532815}
   m_LocalPosition: {x: 0, y: 0, z: -1.062}
-  m_LocalScale: {x: 0.0028500007, y: 0.0066600004, z: 0.79586023}
+  m_LocalScale: {x: 0.0025650007, y: 0.005994, z: 0.7162742}
   m_Children: []
   m_Father: {fileID: 1100193572}
   m_RootOrder: 2

@@ -936,7 +936,7 @@ RectTransform:
   m_GameObject: {fileID: 210250516}
   m_LocalRotation: {x: -0.00000068545336, y: -0.7071077, z: -0.00000057206483, w: 0.70710593}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.0067594848, y: 0.030344455, z: 45.923862}
+  m_LocalScale: {x: 0.0060159415, y: 0.027006565, z: 40.87224}
   m_Children: []
   m_Father: {fileID: 1616265478}
   m_RootOrder: 0
@@ -3622,9 +3622,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e9f135939e70e4b4f8671f2ea978aa53, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9bcd9aded22c40942adbea359151c97d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.611
+  m_Volume: 0.417
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -10209,6 +10209,7 @@ GameObject:
   - component: {fileID: 1853650252}
   - component: {fileID: 1853650251}
   - component: {fileID: 1853650250}
+  - component: {fileID: 1853650254}
   m_Layer: 5
   m_Name: QuestionBtn
   m_TagString: Untagged
@@ -10338,6 +10339,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1853650248}
   m_CullTransparentMesh: 0
+--- !u!114 &1853650254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853650248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5e3fbe758d670d4f9898ba4f815708f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 1853650251}
 --- !u!1 &1854938804
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,26 +6,27 @@ using UnityEngine.UI;
 using System;
 using System.Security.Cryptography.X509Certificates;
 using System.Net.Security;
+using System.Threading;
 
 public class Timer : MonoBehaviour
 {
     
     public static bool speechFinished = false;
-    private int timeLeft = GetSliderDuration.durationSelected;// duration for testing
-    private int speechTime = GetSliderDuration.durationSelected;
+    private int timeLeft = 10;//GetSliderDuration.durationSelected;// duration for testing
+    private int speechTime = 10;// GetSliderDuration.durationSelected;
     public Text countdownText;
     AudioSource audioData;
-    public bool playAudio = true;
-    bool isRecording = true;
+
+    bool isRecording = RecordUserAudio.recordAudio;
     AudioClip myAudioClip;
-    int count = 0;
     string apiKey;
     
     // Use this for initialization
 
     void Start()
     {
-     
+
+        Debug.Log(RecordUserAudio.recordAudio.ToString());
         StartCoroutine("LoseTime");
         if (isRecording)
         {
@@ -43,29 +44,30 @@ public class Timer : MonoBehaviour
     {
         int minutesRemaining;
         int secondsRemaining;
-        if (isRecording)
+
+        if (timeLeft > 60)
         {
-            if (timeLeft > 60)
+            minutesRemaining = timeLeft / 60;
+            secondsRemaining = timeLeft % 60;
+            countdownText.text = (minutesRemaining + ":" + secondsRemaining);
+        }
+        else
+        {
+            countdownText.text = (timeLeft + " !");
+        }
+
+        if (timeLeft <= 0)
+        {
+            countdownText.text = "Time Up!";
+            StopCoroutine("LoseTime");
+            speechFinished = true;
+
+            if (isRecording)
             {
-                minutesRemaining = timeLeft / 60;
-                secondsRemaining = timeLeft % 60;
-                countdownText.text = (minutesRemaining + ":" + secondsRemaining);
-            }
-            else
-            {
-                countdownText.text = (timeLeft+" !");
-            }
-            if (timeLeft <= 0)
-            {
-                countdownText.text = "Time Up!";
-                if (playAudio)
-                {
-                    playAudio = false;
-                }
                 isRecording = false;
                 float filenameRand = UnityEngine.Random.Range(0.0f, 10.0f);
 
-                string filename = "testing" + filenameRand;
+                string filename = "Speech" + filenameRand;
 
                 Microphone.End(null); //Stop the audio recording
 
@@ -83,39 +85,14 @@ public class Timer : MonoBehaviour
                 // Make sure directory exists if user is saving to sub dir.
                 Directory.CreateDirectory(Path.GetDirectoryName(filePath));
                 Microphone.End("");
+
                 SavWav.Save(filePath, myAudioClip);
 
-                //apiKey = "0dd1709ed323b7ac7aba870501496ef12f9cb0fc";
+                SendAudioToEmail.SendEmail(filePath);
 
-                //string apiURL = "http://www.google.com/speech-api/v2/recognize?output=json&lang=IE-&key=" + apiKey;////////   Not valid anymore
-                //string Response;
-
-                //Debug.Log("Uploading " + filePath);
-                //Response = HttpUploadFile(apiURL, filePath, "file", "audio/wav; rate=44100");
-                //Debug.Log("Response String: " + Response);
-
-                //var jsonresponse = SimpleJSON.JSON.Parse(Response);
-
-                //if (jsonresponse != null)
-                //{
-                //    string resultString = jsonresponse["result"][0].ToString();
-                //    var jsonResults = SimpleJSON.JSON.Parse(resultString);
-
-                //    string transcripts = jsonResults["alternative"][0]["transcript"].ToString();
-
-                //    Debug.Log("transcript string: " + transcripts);
-                //    //TextBox.text = transcripts;
-
-                //}
-
-                StopCoroutine("LoseTime");
                 
-
-                count++;
-                speechFinished = true;
             }
-        }
-
+        }     
 
     }
 

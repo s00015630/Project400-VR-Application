@@ -5506,6 +5506,7 @@ GameObject:
   - component: {fileID: 323316123}
   - component: {fileID: 323316122}
   - component: {fileID: 323316121}
+  - component: {fileID: 323316125}
   m_Layer: 5
   m_Name: QuestionBtn
   m_TagString: Untagged
@@ -5635,6 +5636,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 323316119}
   m_CullTransparentMesh: 0
+--- !u!114 &323316125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323316119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5e3fbe758d670d4f9898ba4f815708f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 323316122}
 --- !u!1 &324281622
 GameObject:
   m_ObjectHideFlags: 0
@@ -32132,15 +32146,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1993885883}
   m_LocalRotation: {x: -0.00000068545336, y: -0.7071077, z: -0.00000057206483, w: 0.70710593}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.0067594848, y: 0.030344455, z: 45.923862}
+  m_LocalPosition: {x: 0, y: 0, z: 0.0000011882}
+  m_LocalScale: {x: 0.0060792104, y: 0.027290588, z: 41.302086}
   m_Children: []
   m_Father: {fileID: 1000334311}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 45.000004, y: 1.072, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.55, y: -0.044}
+  m_AnchoredPosition: {x: 0.54953, y: -0.043963}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1993885885

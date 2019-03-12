@@ -19,13 +19,7 @@ public class ActivateQuestionButton : MonoBehaviour
 
     IEnumerator LateCall()
      {
- 
-         yield return new WaitForSeconds(duration);
-
-        GetComponent<Button>().interactable = true;
-        Debug.Log("Button is now active");
-        
+        yield return new WaitForSeconds(duration);
+        GetComponent<Button>().interactable = true;       
     }
-
-    
 }

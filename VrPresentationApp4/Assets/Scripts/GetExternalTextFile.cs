@@ -12,19 +12,14 @@ public sealed class GetExternalTextFile : MonoBehaviour
     public void ReadFromFile()
     {        
         m_Text = GetComponent<TextMeshProUGUI>();
-        m_Text.text = "Attempting to load text file";
         string fileName = "VrNots.txt";
         string filePathTesting;
-        
-
         filePathTesting = Path.Combine(Application.persistentDataPath, fileName);
         
         if (!File.Exists(filePathTesting))
         {
             GetTextWeb();
-            Debug.Log("Attempted to get from website");
-            //m_Text.text = "Text file not found. File must be a text file and named \"VrNotes.txt\"";
-            //Debug.LogErrorFormat("Error reading {0}\nFile does not exist!", filePathTesting);
+            Debug.Log("Attempting to get from website");
         }
         else
         {
@@ -40,10 +35,6 @@ public sealed class GetExternalTextFile : MonoBehaviour
         StartCoroutine(GetText());
         
     }
-    public void ButtonClicked()
-    {
-        Debug.Log("The button is clicked");
-    }
     
 
     IEnumerator GetText()
@@ -53,7 +44,7 @@ public sealed class GetExternalTextFile : MonoBehaviour
 
         if (www.isNetworkError || www.isHttpError)
         {
-            m_Text.text = "There was an problem retrieving your notes.\nThis could be caused by no internet connection or the server could be down";
+            m_Text.text = "There was a problem retrieving your notes.\nThis could be caused by no internet connection or the server could be down";
             Debug.Log(www.error);
         }
         else
