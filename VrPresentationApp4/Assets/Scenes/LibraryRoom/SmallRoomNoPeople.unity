@@ -978,6 +978,7 @@ GameObject:
   - component: {fileID: 439293703}
   - component: {fileID: 439293702}
   - component: {fileID: 439293701}
+  - component: {fileID: 439293706}
   m_Layer: 5
   m_Name: ButtonQuit
   m_TagString: Untagged
@@ -1138,6 +1139,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 439293699}
   m_CullTransparentMesh: 0
+--- !u!114 &439293706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439293699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4d0a2eab6736145a99592d6d673067, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audio: {fileID: 8300000, guid: 955ac2ea22978c943a279a3c962215a7, type: 3}
 --- !u!1001 &459672246
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3613,8 +3627,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 866b6e4af3cae7848aa07bfabe9876ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasStarted: 0
   countdownText: {fileID: 1393164406}
-  playAudio: 1
 --- !u!114 &1393164406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3837,6 +3851,7 @@ GameObject:
   - component: {fileID: 1703458705}
   - component: {fileID: 1703458704}
   - component: {fileID: 1703458703}
+  - component: {fileID: 1703458702}
   m_Layer: 5
   m_Name: ButtonLoadNotes
   m_TagString: Untagged
@@ -3864,6 +3879,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0.137, y: -231.969}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1703458702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703458700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4d0a2eab6736145a99592d6d673067, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audio: {fileID: 8300000, guid: 955ac2ea22978c943a279a3c962215a7, type: 3}
 --- !u!114 &1703458703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3885,8 +3913,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9716981, g: 0.068752214, b: 0.077874884, a: 1}
-    m_PressedColor: {r: 0.98039216, g: 0.8265034, b: 0.031372555, a: 1}
+    m_HighlightedColor: {r: 0.5764706, g: 0.6313726, b: 0.5803922, a: 1}
+    m_PressedColor: {r: 0.21568628, g: 0.48235294, b: 0.20392157, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1

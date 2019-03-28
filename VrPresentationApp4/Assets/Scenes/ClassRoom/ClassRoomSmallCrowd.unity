@@ -4444,6 +4444,7 @@ GameObject:
   - component: {fileID: 276520890}
   - component: {fileID: 276520889}
   - component: {fileID: 276520888}
+  - component: {fileID: 276520892}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -4573,6 +4574,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 276520886}
   m_CullTransparentMesh: 0
+--- !u!114 &276520892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276520886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4d0a2eab6736145a99592d6d673067, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audio: {fileID: 8300000, guid: 955ac2ea22978c943a279a3c962215a7, type: 3}
 --- !u!1 &286117692
 GameObject:
   m_ObjectHideFlags: 0
@@ -5507,6 +5521,7 @@ GameObject:
   - component: {fileID: 323316122}
   - component: {fileID: 323316121}
   - component: {fileID: 323316125}
+  - component: {fileID: 323316126}
   m_Layer: 5
   m_Name: QuestionBtn
   m_TagString: Untagged
@@ -5567,8 +5582,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.07058822, g: 0.30533996, b: 0.972549, a: 1}
-    m_PressedColor: {r: 0.031372555, g: 0.98039216, b: 0.2836799, a: 1}
+    m_HighlightedColor: {r: 0.5764706, g: 0.6313726, b: 0.5803922, a: 1}
+    m_PressedColor: {r: 0.21568628, g: 0.48235294, b: 0.20392157, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -5649,6 +5664,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 323316122}
+--- !u!114 &323316126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323316119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4d0a2eab6736145a99592d6d673067, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audio: {fileID: 8300000, guid: 955ac2ea22978c943a279a3c962215a7, type: 3}
 --- !u!1 &324281622
 GameObject:
   m_ObjectHideFlags: 0
@@ -10812,7 +10840,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4905735782604668, guid: 2682ce505c53e9a49a3308a12af09ba5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.585
+      value: 0.959
       objectReference: {fileID: 0}
     - target: {fileID: 4905735782604668, guid: 2682ce505c53e9a49a3308a12af09ba5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10820,7 +10848,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4905735782604668, guid: 2682ce505c53e9a49a3308a12af09ba5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.194
+      value: 0.461
       objectReference: {fileID: 0}
     - target: {fileID: 4905735782604668, guid: 2682ce505c53e9a49a3308a12af09ba5, type: 3}
       propertyPath: m_LocalRotation.x
@@ -20530,6 +20558,7 @@ GameObject:
   - component: {fileID: 1290205969}
   - component: {fileID: 1290205968}
   - component: {fileID: 1290205967}
+  - component: {fileID: 1290205970}
   m_Layer: 5
   m_Name: ButtonLoadNotes
   m_TagString: Untagged
@@ -20647,6 +20676,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1290205965}
   m_CullTransparentMesh: 0
+--- !u!114 &1290205970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290205965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4d0a2eab6736145a99592d6d673067, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audio: {fileID: 8300000, guid: 955ac2ea22978c943a279a3c962215a7, type: 3}
 --- !u!1 &1294640492
 GameObject:
   m_ObjectHideFlags: 0
@@ -32181,8 +32223,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 866b6e4af3cae7848aa07bfabe9876ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasStarted: 0
   countdownText: {fileID: 1993885887}
-  playAudio: 1
 --- !u!114 &1993885887
 MonoBehaviour:
   m_ObjectHideFlags: 0

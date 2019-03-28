@@ -32,19 +32,20 @@ public sealed class GetExternalTextFile : MonoBehaviour
     }
     public void GetTextWeb()
     {
-        StartCoroutine(GetText());
+        StartCoroutine(GetTextFormWeb());
         
     }
     
 
-    IEnumerator GetText()
+    IEnumerator GetTextFormWeb()
     {
-        UnityWebRequest www = UnityWebRequest.Get("https://s3-eu-west-1.amazonaws.com/s00015630bucket1/folder1/vrnotes.txt");
+        UnityWebRequest www = UnityWebRequest.Get("https://s3-eu-west-1.amazonaws.com/classtalknotes/vrnotes.txt");
+                                                   
         yield return www.SendWebRequest();
 
         if (www.isNetworkError || www.isHttpError)
         {
-            m_Text.text = "There was a problem retrieving your notes.\nThis could be caused by no internet connection or the server could be down";
+            m_Text.text = "There was a problem retrieving your notes.\nThis could be caused by no internet connection, the server could be down or the notes are in an incorrect format";
             Debug.Log(www.error);
         }
         else

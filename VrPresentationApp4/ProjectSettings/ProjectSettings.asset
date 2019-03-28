@@ -42,9 +42,9 @@ PlayerSettings:
   m_SplashScreenLogos:
   - logo: {fileID: 10404, guid: 0000000000000000e000000000000000, type: 0}
     duration: 2
-  - logo: {fileID: 21300000, guid: 23f2fe8f854812e4f903d0dc9ccc8d0c, type: 3}
-    duration: 4
-  m_VirtualRealitySplashScreen: {fileID: 2800000, guid: 23f2fe8f854812e4f903d0dc9ccc8d0c,
+  - logo: {fileID: 21300000, guid: f688481e2a94ed0469711e7c97240993, type: 3}
+    duration: 2
+  m_VirtualRealitySplashScreen: {fileID: 2800000, guid: f688481e2a94ed0469711e7c97240993,
     type: 3}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1024
@@ -262,7 +262,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 23f2fe8f854812e4f903d0dc9ccc8d0c, type: 3}
+      m_Icon: {fileID: 2800000, guid: 55d255986d630984ab671fd63c7b3d81, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
@@ -646,7 +646,7 @@ PlayerSettings:
   incrementalIl2cppBuild: {}
   allowUnsafeCode: 0
   additionalIl2CppArgs: 
-  scriptingRuntimeVersion: 0
+  scriptingRuntimeVersion: 1
   apiCompatibilityLevelPerPlatform:
     Android: 1
   m_RenderingPath: 1

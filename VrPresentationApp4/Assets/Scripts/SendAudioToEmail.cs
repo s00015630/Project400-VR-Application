@@ -15,11 +15,11 @@ public class SendAudioToEmail : MonoBehaviour
     {
         try
         {
-
+            Debug.Log("In try of SendEmail");
             MailMessage mail = new MailMessage();
             string name = GlobalVars.smtpName;
-            string smtpPass = GlobalVars.smtpPass;
-            string sendTo = "";
+            string smtpPass = GlobalVars.smptPass;
+            string sendTo = "S00015630@mail.itsligo.ie";
             mail.From = new MailAddress(GlobalVars.smtpName);
             mail.To.Add(sendTo);
             mail.Subject = "Speech Recording";
@@ -35,6 +35,7 @@ public class SendAudioToEmail : MonoBehaviour
                 Credentials = new System.Net.NetworkCredential(name, smtpPass) as ICredentialsByHost,
                 EnableSsl = true
             };
+            Debug.Log("exit smtpServer");
             ServicePointManager.ServerCertificateValidationCallback =
                 delegate (object s, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors)
                 { return true; };

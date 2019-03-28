@@ -4,27 +4,13 @@ using UnityEngine;
 
 public class FadeOutSprite : MonoBehaviour
 {
-    public float fadeOutTime = 1.0f;
-    // Start is called before the first frame update
-    void Start()
+    private float max = 1f;
+    private float speed = 0.6f;
+    public SpriteRenderer sprite;
+
+    void Update()
     {
-        StartCoroutine (FadeOuSpritet (GetComponent<SpriteRenderer>()));
+        sprite.color = new Color(1f, 1f, 1f, Mathf.PingPong(Time.time * speed, max));
     }
 
-    IEnumerator FadeOuSpritet(SpriteRenderer _sprite)
-    {
-        Color color = _sprite.color;
-        while (color.a > 0f)
-        {
-            color.a = Time.deltaTime / fadeOutTime;
-            _sprite.color = color;
-
-            if (color.a <= 0f)
-            {
-                color.a = 0.0f;
-            }
-            yield return null;
-        }
-        _sprite.color = color;
-    }
 }
