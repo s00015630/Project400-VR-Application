@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <!-- Javascript AWS SDK  -->
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.247.1.min.js"></script>
+    <!-- Your Browser-Side script -->
+    <script src="app2.js"></script>
+    <!-- Latest compiled and minified Boostrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+    <style>  
+	html {
+    position: relative;
+    min-height: 100%;
+	}	
+	.content{
+	min-height: 500px;
+	}
+	h1{
+	color: fff;
+	text-align: center;
+	font-size: 10em;
+	margin-bottom: 2px;
+	}
+	h2{
+	color: fff;
+	text-align: center;
+	font-size: 2em;
+	margin-top: 2px;
+	}
+	footer p{
+	background-color:000;
+	color:fff;
+	text-align: center;
+	margin-bottom:0;
+	padding: 30px 0px 30px 0px;
+	}
+	footer{
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+	}
+	
+    </style>
+</head>
+  <body>
+  <!-- Header -->
+  <header class="bg-primary py-5 mb-5">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-12">
+          <h1>Class Talk</h1>
+        </div>
+		<h2>Notes Upload</h2>
+      </div>
+    </div>
+  </header>
+    <div class="container">
+	
+      <!-- new input and button to upload an text file -->
+       <div class="row">
+	   <div class="content">
+      <div class="col-md-12 mb-5">
+                  <h3>When uploading your notes be sure that they are in the correct file format (text file) or they may not display correctly in the VR application.</h3>
+
+        <hr>
+        <div class="form-group">
+            <label for="upload">Add Text File</label>
+            <input id="upload" type="file" class="form-control-file" accept="text/*">
+          </div>
+        <a class="btn btn-primary btn-lg" onclick="addFile()">Upload &raquo;</a>
+      </div>
+	  </div>
+     </div>
+    <!-- /.row -->
+	</div>
+	<!-- Footer -->
+  <footer>
+    
+      <p text-center">Copyright &copy; Class Talk, IT Sligo 2019</p>
+    
+    <!-- /.container -->
+  </footer>
+
+ </body>
+</html>

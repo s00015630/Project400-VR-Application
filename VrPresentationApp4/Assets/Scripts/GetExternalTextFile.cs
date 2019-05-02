@@ -32,12 +32,12 @@ public sealed class GetExternalTextFile : MonoBehaviour
     }
     public void GetTextWeb()
     {
-        StartCoroutine(GetTextFormWeb());
+        StartCoroutine(GetTextFromWeb());
         
     }
     
 
-    IEnumerator GetTextFormWeb()
+    IEnumerator GetTextFromWeb()
     {
         UnityWebRequest www = UnityWebRequest.Get("https://s3-eu-west-1.amazonaws.com/classtalknotes/vrnotes.txt");
                                                    

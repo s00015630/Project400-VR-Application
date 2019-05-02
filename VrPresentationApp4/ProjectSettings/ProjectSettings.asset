@@ -132,7 +132,7 @@ PlayerSettings:
       enableTransitionView: 0
     daydream:
       depthFormat: 0
-      useSustainedPerformanceMode: 0
+      useSustainedPerformanceMode: 1
       enableVideoLayer: 0
       useProtectedVideoMemory: 0
       minimumSupportedHeadTracking: 0
@@ -648,7 +648,7 @@ PlayerSettings:
   additionalIl2CppArgs: 
   scriptingRuntimeVersion: 1
   apiCompatibilityLevelPerPlatform:
-    Android: 1
+    Android: 6
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
   metroPackageName: Template_3D
@@ -733,7 +733,7 @@ PlayerSettings:
   facebookStatus: 1
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
-  apiCompatibilityLevel: 2
+  apiCompatibilityLevel: 6
   cloudProjectId: 6eb09008-0480-47d2-b29b-4cbb937a291d
   framebufferDepthMemorylessMode: 0
   projectName: VrPresentation

@@ -72,7 +72,7 @@ public class Timer : MonoBehaviour
     public static bool speechSaved = false;
     public static string speechPath;
     private bool startTimer = false;
-    private int timeLeft = 10;//duration for testing   GetSliderDuration.durationSelected;
+    private int timeLeft = 10;// GetSliderDuration.durationSelected;
     private int speechTime = 10;// GetSliderDuration.durationSelected;
     private int timerDelay = 10;
     public bool hasStarted;
@@ -209,24 +209,20 @@ public class Timer : MonoBehaviour
     }
 
    
-    
+    //Send the URL link to an email address to access the audio recording
     IEnumerator SendTheSpeech(string filePath)
     {
-        Debug.Log("in SendTheSpeech");
         try
         {
             MailMessage mail = new MailMessage();
             string name = GlobalVars.smtpName;
             string smtpPass = GlobalVars.smptPass;
-            string sendTo = "S00015630@mail.itsligo.ie";
+            string sendTo = "S00015630@mail.itsligo.ie";//change this to Access Office email address
             mail.From = new MailAddress(GlobalVars.smtpName);
             mail.To.Add(sendTo);
             mail.Subject = "Speech Recording";
             mail.Body = "This is a link to a speech sent from the 'Class Talk' application. "+bucketUrl+fileName;
-            //Attachment audioMailAttachment;
-            //audioMailAttachment = new Attachment(filePath);
-            //mail.Attachments.Add(audioMailAttachment);
-
+            
             SmtpClient smtpServer = new SmtpClient("smtp.gmail.com")
             {
                 Port = 587,
@@ -249,15 +245,14 @@ public class Timer : MonoBehaviour
 
             string msg = "Mail cannot be sent:";
             msg += ex.Message;
-            Debug.Log("Error: Inside catch block of Mail sending");
             Debug.Log("Error msg:" + ex);
             Debug.Log("Stack trace:" + ex.StackTrace);
             emailSent = false;
-            //throw new Exception(msg);
         }
         
          yield return null;
     }
+    //Upload the audio to an S3 bucket
     IEnumerator UploadObjectForBucket(string pathFile, string S3BucketName, string fileNameOnBucket)
     {
         pathFile = speechPath;
@@ -289,6 +284,7 @@ public class Timer : MonoBehaviour
         yield return null;
     }
 
+    //Delete the audio file from device 
     private void DeleteFile()
     {
         
@@ -309,6 +305,8 @@ public class Timer : MonoBehaviour
             
         }    
     }
+
+    //Give it a chance to send the file before deleting it
     IEnumerator WaitBeforeDeletingFile()
     {
         float time = 5f;
@@ -332,6 +330,7 @@ public class Timer : MonoBehaviour
         }
     }
 
+    //Start the timer countdown
     IEnumerator LoseTime()
     {
         while (true)
@@ -341,6 +340,7 @@ public class Timer : MonoBehaviour
         }
     }
 
+    //Delay the timer to allow the user to prepare
     IEnumerator LoseTimeDelay()
     {
         while (true)

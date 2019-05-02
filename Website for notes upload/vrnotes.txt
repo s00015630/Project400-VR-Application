@@ -1,0 +1,18 @@
+
+Class Talk
+Virtual Reality Presentations
+
+Project 400 
+Mark O Shea 
+Software Development 4th year
+
+
+Brought to you by the Access Office,
+IT Sligo 2019
+
+The following if an application designed using the software packages Unity 3d and Visual Studio 2017 to help students at IT Sligo develope their presentation skills in a virtual environment.
+
+These notes have been loaded from an AWS S3 (storage). A website has been created to allow other users to upload their notes. 
+
+If enabled, the audio from the presentation will be sent to an Access Office email account. The student can then review their audio.
+

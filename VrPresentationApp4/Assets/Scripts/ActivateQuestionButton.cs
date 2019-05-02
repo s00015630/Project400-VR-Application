@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+// The "Ask Question" button becomes active after the speech duration has finished,
+// plus 10 seconds for the timer delay
 public class ActivateQuestionButton : MonoBehaviour
 {
-    //Uncomment before final build
-    private readonly float duration = 10f; // + (float)GetDurationTime.durationSelected; 
+    private readonly float duration = 10f + (float)GetSliderDuration.durationSelected; 
 
     void Start()
     {

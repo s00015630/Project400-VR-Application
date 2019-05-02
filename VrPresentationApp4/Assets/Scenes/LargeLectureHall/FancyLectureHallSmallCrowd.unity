@@ -5862,6 +5862,14 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: 980d9c88be14912439e822077f418a16, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.064
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: 980d9c88be14912439e822077f418a16, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.096
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 980d9c88be14912439e822077f418a16, type: 3}
 --- !u!4 &1067265298 stripped
@@ -11276,6 +11284,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 866b6e4af3cae7848aa07bfabe9876ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  identityPoolId: eu-west-1:4b6476b1-7eb8-4376-a6f6-5ab2f3bfbff5
+  cognitoIdentityRegion: eu-west-1
+  s3Region: eu-west-1
   hasStarted: 0
   countdownText: {fileID: 2077261963}
 --- !u!114 &2077261963
